@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grosir Bang Iky</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Grosir Bang Iky</h1>
+        <nav>
+         <a href="#home">Home</a>
+        <a href="#produk">Produk</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="#kontak">Kontak</a>
+        <a href="#keranjang">Keranjang (<span id="cart-count">0</span>)</a>
+        <a href="login.html" onclick="logout()">Logout</a>
+        <span id="user-info" style="margin-left:10px; color:yellow;"></span>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <h2>Pusat Grosir Murah & Terpercaya</h2>
+        <p>Belanja grosir lebih hemat di Grosir Bang Iky</p>
+    </section>
+
+    <!-- Produk -->
+    <section id="produk">
+        <h2>Daftar Produk</h2>
+        <div class="product-list">
+
+            <section id="produk">
+    <h2>Daftar Produk Grosir</h2>
+
+    <div class="product-list">
+
+    <!-- BERAS -->
+    <div class="product">
+        <h3>Beras Ramos 5 Kg</h3>
+        <p>Rp 65.000</p>
+        <button onclick="addToCart('Beras Ramos 5 Kg', 65000)">Tambah</button>
+        <button class="save-btn" onclick="saveProduct('Beras Ramos 5 Kg', 65000)">❤️ Simpan</button>
+    </div>
+
+    <div class="product">
+        <h3>Beras Premium 10 Kg</h3>
+        <p>Rp 125.000</p>
+        <button onclick="addToCart('Beras Premium 10 Kg', 125000)">Tambah</button>
+        <button class="save-btn" onclick="saveProduct('Beras Premium 10 Kg', 125000)">❤️ Simpan</button>
+    </div>
+
+    <!-- GULA -->
+    <div class="product">
+        <h3>Gula Pasir 1 Kg</h3>
+        <p>Rp 15.000</p>
+        <button onclick="addToCart('Gula Pasir 1 Kg', 15000)">Tambah</button>
+        <button class="save-btn" onclick="saveProduct('Gula Pasir 1 Kg', 15000)">❤️ Simpan</button>
+    </div>
+
+    <div class="product">
+        <h3>Gula Pasir 5 Kg</h3>
+        <p>Rp 72.000</p>
+        <button onclick="addToCart('Gula Pasir 5 Kg', 72000)">Tambah</button>
+        <button class="save-btn" onclick="saveProduct('Gula Pasir 5 Kg', 72000)">❤️ Simpan</button>
+    </div>
+
+    <!-- MINYAK -->
+    <div class="product">
+        <h3>Minyak Goreng 1 L</h3>
+        <p>Rp 15.000</p>
+        <button onclick="addToCart('Minyak Goreng 1 L', 15000)">Tambah</button>
+        <button class="save-btn" onclick="saveProduct('Minyak Goreng 1 L', 15000)">❤️ Simpan</button>
+    </div>
+
+    <div class="product">
+        <h3>Minyak Goreng 2 L</h3>
+        <p>Rp 30.000</p>
+        <button onclick="addToCart('Minyak Goreng 2 L', 30000)">Tambah</button>
+        <button class="save-btn" onclick="saveProduct('Minyak Goreng 2 L', 30000)">❤️ Simpan</button>
+    </div>
+
+    <!-- MIE -->
+    <div class="product">
+        <h3>Indomie Goreng (1 Dus)</h3>
+        <p>Rp 110.000</p>
+        <button onclick="addToCart('Indomie Goreng Dus', 110000)">Tambah</button>
+        <button class="save-btn" onclick="saveProduct('Indomie Goreng Dus', 110000)">❤️ Simpan</button>
+    </div>
+
+    <div class="product">
+        <h3>Indomie Kuah (1 Dus)</h3>
+        <p>Rp 105.000</p>
+        <button onclick="addToCart('Indomie Kuah Dus', 105000)">Tambah</button>
+        <button class="save-btn" onclick="saveProduct('Indomie Kuah Dus', 105000)">❤️ Simpan</button>
+    </div>
+
+    <!-- ROKOK -->
+    <div class="product">
+        <h3>Rokok Sampoerna Mild</h3>
+        <p>Rp 32.000</p>
+        <button onclick="addToCart('Sampoerna Mild', 32000)">Tambah</button>
+        <button class="save-btn" onclick="saveProduct('Sampoerna Mild', 32000)">❤️ Simpan</button>
+    </div>
+
+    <div class="product">
+        <h3>Rokok Djarum Super</h3>
+        <p>Rp 30.000</p>
+        <button onclick="addToCart('Djarum Super', 30000)">Tambah</button>
+        <button class="save-btn" onclick="saveProduct('Djarum Super', 30000)">❤️ Simpan</button>
+    </div>
+
+    <div class="product">
+        <h3>Rokok Gudang Garam</h3>
+        <p>Rp 28.000</p>
+        <button onclick="addToCart('Gudang Garam', 28000)">Tambah</button>
+        <button class="save-btn" onclick="saveProduct('Gudang Garam', 28000)">❤️ Simpan</button>
+    </div>
+
+    <!-- SABUN & DETERJEN -->
+    <div class="product">
+        <h3>Sabun Lifebuoy Isi 4</h3>
+        <p>Rp 18.000</p>
+        <button onclick="addToCart('Sabun Lifebuoy Isi 4', 18000)">Tambah</button>
+        <button class="save-btn" onclick="saveProduct('Sabun Lifebuoy Isi 4', 18000)">❤️ Simpan</button>
+    </div>
+
+    <div class="product">
+        <h3>Deterjen Rinso 1 Kg</h3>
+        <p>Rp 22.000</p>
+        <button onclick="addToCart('Rinso 1 Kg', 22000)">Tambah</button>
+        <button class="save-btn" onclick="saveProduct('Rinso 1 Kg', 22000)">❤️ Simpan</button>
+    </div>
+
+</div>
+
+</section>
+
+
+    <!-- Keranjang -->
+    <section id="keranjang">
+        <h2>Keranjang Belanja</h2>
+        <ul id="cart-items"></ul>
+        <h3>Total: Rp <span id="total">0</span></h3>
+    </section>
+
+    <!-- Tentang -->
+    <section id="tentang">
+        <h2>Tentang Kami</h2>
+        <p>
+            Grosir Bang Iky adalah usaha grosir yang menyediakan kebutuhan pokok 
+            dengan harga terjangkau dan kualitas terbaik.
+        </p>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak">
+        <h2>Kontak Kami</h2>
+        <p>📍 Medan, Indonesia</p>
+        <p>📞 0812-3456-7890</p>
+        <p>📧 grosirbangiky@gmail.com</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Grosir Bang Iky</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.auth {
+    width: 300px;
+    margin: 100px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.auth input {
+    width: 90%;
+    padding: 8px;
+    margin: 10px 0;
+}
+
+.auth button {
+    width: 100%;
+    padding: 8px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.auth button:hover {
+    background-color: #1b5e20;
+}
